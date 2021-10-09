@@ -9,6 +9,7 @@
     "tailwindBuild": "npx tailwindcss -i ./public/stylesheets/tailwind/tailwind.css -o ./public/stylesheets/tailwind.css"
   },
   "dependencies": {
+    "alpinejs": "^3.4.2",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",

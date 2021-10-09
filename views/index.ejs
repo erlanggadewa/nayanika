@@ -1,5 +1,11 @@
-<div class="h-full bg-white w-full ml-6 overflow-y-auto">
-  <div class="flex sm:px-6 sm:py-2 bg-white">
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="home">
     <input
       type="text"
       aria-label="What do you want to learn?"
@@ -12,7 +18,8 @@
         border-gray-200
         rounded-md
         py-0
-        pl-10
+        pl-3
+        sm:pl-10
         border-2
         focus:border-0
         focus:border-light-blue-500
@@ -27,12 +34,15 @@
         border-2 border-green-500
         text-green-500
         rounded-md
-        px-4
-        py-2
-        ml-10
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
         transition
         duration-500
         ease
+        text-sm
+        sm:text-base
         select-none
         hover:text-white hover:bg-green-600
         focus:outline-none focus:shadow-outline
@@ -46,9 +56,13 @@
         border-2 border-blue-500
         text-blue-500
         rounded-md
-        px-4
-        py-2
-        mx-4
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
         transition
         duration-500
         ease
@@ -60,29 +74,52 @@
       <span>Daftar</span>
     </button>
   </div>
-  <div class="sm:px-6 sm:py-14">
-    <div class="jumbotron flex">
-      <content class="">
+  <div class="p-2 sm:py-14 px-6">
+    <div class="jumbotron sm:flex hidden">
+      <content class="lg:ml-9">
         <h1 class="text-green-800 font-medium uppercase text-3xl">
           Kiranagara
         </h1>
-        <p class="sm:pr-8 text-justify mt-7 font-medium">
+        <p
+          class="
+            sm:pr-8
+            lg:pr-40
+            text-justify
+            mt-7
+            text-base
+            md:text-sm
+            font-medium
+          "
+        >
           Kiranagara merupakan sebuah platform belajar online gratis yang
           membahas mengenai kebudayaan yang ada di Indonesia. Kirana berasal
           dari bahasa sastra Indonesia yang berarti cantik dan Nagara berarti
-          Negara.
+          Negara. Jadi arti dari Kiranagara adalah negara yang cantik. Banyak
+          harapan dengan diciptakannya website e-learning ini, salah satunya
+          ialah dapat meningkatkan ilmu pengetahuan para generasi bangsa
+          mengenai kebudayaan yang ada di Indonesia melalui perkembangan
+          teknologi ini yaitu berbasis web
         </p>
       </content>
-      <img src="images/logo2.svg" class="sm:w-32" alt="" />
+      <img src="images/logo2.svg" class="sm:w-32 md:w-60 lg:mr-20" alt="" />
     </div>
 
     <!-- borobudur -->
     <div
-      class="sm:mt-20 w-full sm:p-10 rounded-3xl flex flex-col items-center"
+      class="
+        sm:mt-20
+        xl:mt-16
+        w-full
+        sm:p-10
+        rounded-3xl
+        flex flex-col
+        lg:flex-row
+        items-center
+      "
       style="background-color: #d7e2e871"
     >
       <svg
-        class="sm:w-1/2"
+        class="sm:w-1/2 w-2/3 lg:w-full xl:w-1/2"
         viewBox="0 0 505 440"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -109,13 +146,29 @@
           />
         </defs>
       </svg>
-      <content class="sm:mt-6">
-        <h1 class="text-green-800 font-medium uppercase">Kiranagara</h1>
-        <p class="font-medium">
-          Kiranagara merupakan sebuah platform belajar online gratis yang
-          membahas mengenai kebudayaan yang ada di Indonesia. Kirana berasal
-          dari bahasa sastra Indonesia yang berarti cantik dan Nagara berarti
-          Negara.
+      <content
+        class="
+          flex flex-col
+          items-end
+          sm:mt-6
+          lg:mt-0
+          p-4
+          lg:p-0 lg:text-right lg:w-4/5 lg:ml-16
+        "
+      >
+        <h1 class="text-green-800 text-lg font-medium lg:text-2xl lg:mb-5">
+          Hallo, Kiraners
+        </h1>
+        <p class="font-medium text-justify text-sm sm:mt-0 mt-2">
+          Indonesia merupakan negara yang begitu indah dan menyimpan banyak
+          kekayaan di dalamnya. Keanekaragaman yang ada di Indonesia menjadi
+          salah satu ciri khas sebagai negara yang unik, tetapi keanekaragaman
+          tersebut tidak menjadi penghalang untuk rakyatnya tetap saling
+          menghargai bahkan merasa bangga atas keanekaragaman itu sendiri. 273.5
+          juta jiwa yang menempati negara Indonesia yang terdiri dari bayi
+          hingga lansia terutama para pemuda sebagai generasi bangsa harus
+          menyadari betapa indahnya negara kita, salah satu cara untuk kita
+          melestarikan budaya Indonesia dengan mengingatnya dan menjaganya.
         </p>
       </content>
     </div>
@@ -125,5 +178,11 @@
 
     <!-- Daerah -->
     <%- include('./partials/daerah.ejs') %>
+
+    <!-- Daerah -->
+    <%- include('./partials/kuis.ejs') %>
+
+    <!-- Footer -->
+    <%- include('./partials/footer.ejs') %>
   </div>
 </div>

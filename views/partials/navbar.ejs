@@ -31,7 +31,7 @@
     </div>
 
     <ul class="text-xl overflow-hidden">
-      <a href="/">
+      <a href="/#home">
         <li
           class="
             my-2
@@ -141,7 +141,7 @@
           >
         </li>
       </a>
-      <a href="/kuis">
+      <a href="#kuis">
         <li
           class="
             my-2
@@ -203,17 +203,27 @@
 <!-- Mobile -->
 <div class="sm:hidden">
   <div
+    :class="{'inset-0' : open,'right-1/4' : open}"
     class="flex flex-col absolute inset-0 right-1/4"
+    style="z-index: 9999"
     @click.outside="open = false"
-    x-data="{open:true}"
+    x-data="{open:false}"
   >
     <nav
       :class="{'block' : open, 'hidden' : !open}"
       class="flex flex-col bg-white h-screen"
     >
-      <h1 class="text-center text-white my-4 text-2xl bg-green-700 py-8 -mt-1">
+      <!-- <h1 class="text-center text-white my-4 text-2xl bg-green-700 py-8 -mt-1">
         Kiranagara
-      </h1>
+      </h1> -->
+      <div
+        class="py-7 px-10 flex justify-center"
+        style="background-color: rgba(249, 237, 99, 0.75)"
+      >
+        <a href="#" class="">
+          <img src="images/logo_footer.png" alt="" class="text-white" />
+        </a>
+      </div>
 
       <a
         class="
@@ -230,7 +240,7 @@
           hover:bg-green-700
           focus:bg-green-400 focus:outline-none focus:shadow-outline
         "
-        href="#"
+        href="#home"
       >
         <svg
           class="fill-current inline-block w-7"
@@ -555,24 +565,34 @@
       "
     ></div>
 
-    <button
+    <div
       :class="{'block' : !open, 'hidden' : open}"
       class="
+        w-10
+        h-10
         sm:hidden
-        focus:outline-none focus:shadow-outline
         fixed
-        right-4
-        top-4
+        right-8
+        top-5
+        p-2
+        bg-gray-700
+        rounded-full
+        focus:outline-none focus:shadow-outline
       "
-      @click="open = !open"
     >
-      <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-        <path
-          fill-rule="evenodd"
-          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
+      <button @click="open = !open">
+        <svg
+          fill="currentColor "
+          viewBox="0 0 20 20"
+          class="w-6 h-6 text-gray-50"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
   </div>
 </div>

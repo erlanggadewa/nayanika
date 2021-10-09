@@ -11,6 +11,7 @@
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px);
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 16px;
@@ -34,3 +35,38 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
 }
+
+.easy {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    rgba(67, 206, 162, 1) 3%,
+    rgba(24, 90, 157, 1) 100%
+  );
+}
+.medium {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    rgba(255, 216, 155, 1) 3%,
+    rgba(25, 84, 123, 1) 100%
+  );
+}
+
+.hard {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    rgba(255, 81, 47, 1) 3%,
+    rgba(221, 36, 118, 1) 100%
+  );
+}
+
+.expert {
+  background: rgb(255, 216, 155);
+  background: linear-gradient(
+    rgba(204, 43, 94, 1) 3%,
+    rgba(117, 58, 136, 1) 100%
+  );
+}
+/* .easy img {
+  filter: var(--tw-filter);
+  --tw-drop-shadow: drop-shadow(10px 50px 50px rgb(252, 252, 252));
+} */

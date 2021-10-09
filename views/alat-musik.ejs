@@ -1,0 +1,588 @@
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="">
+    <input
+      type="text"
+      aria-label="What do you want to learn?"
+      placeholder="What do you want to learn?"
+      class="
+        w-full
+        bg-gray-100
+        text-sm text-black
+        placeholder-gray-500
+        border-gray-200
+        rounded-md
+        py-0
+        pl-3
+        sm:pl-10
+        border-2
+        focus:border-0
+        focus:border-light-blue-500
+        focus:outline-none
+        focus:ring-2
+        focus:ring-light-blue-500
+      "
+    />
+    <button
+      type="button"
+      class="
+        border-2 border-green-500
+        text-green-500
+        rounded-md
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
+        transition
+        duration-500
+        ease
+        text-sm
+        sm:text-base
+        select-none
+        hover:text-white hover:bg-green-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      Masuk
+    </button>
+    <button
+      type="button"
+      class="
+        border-2 border-blue-500
+        text-blue-500
+        rounded-md
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
+        transition
+        duration-500
+        ease
+        select-none
+        hover:text-white hover:bg-blue-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      <span>Daftar</span>
+    </button>
+  </div>
+  <div class="p-2 mt-5 px-6">
+    <div class="alat-musik" id="alat-musik">
+      <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
+        Budaya
+      </h1>
+      <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
+      <div
+        class="
+          mt-6
+          grid grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          w-full
+          gap-5
+          pb-3
+        "
+      >
+        <!-- arbab -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/alat_musik/Arbab.png"
+              alt=""
+              class="h-3/5 lg:h-3/5"
+            />
+            <h1 class="mt-2 font-semibold text-green-800">Arbab</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/alat_musik/Arbab.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 lg:w-2/3 p-5 h-1/2 lg:h-4/5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1 class="text-center font-medium text-green-800">
+                    Arbab - Sumatera
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    Instrumen ini terdiri dari 2 bagian yaitu Arbabnya sendiri
+                    (instrumen induknya) dan penggeseknya (stryk stock) dalam
+                    bahasa daerah disebut: Go Arab. Instrumen ini memakai bahan:
+                    tempurung kelapa, kulit kambing, kayu dan dawai Musik Arbab
+                    pernah berkembang di daerah Pidie, Aceh Besar dan Aceh
+                    Barat. Arbab ini dipertunjukkan pada acara-acara keramaian
+                    rakyat, seperti hiburan rakyat, pasar malam dsb. Sekarang
+                    ini tidak pernah dijumpai kesenian ini, diperkirakan sudah
+                    mulai punah. Terakhir kesenian ini dapat dilihat pada zaman
+                    pemerintahan Belanda dan pendudukan Jepang.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- angklung -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/alat_musik/angklung.png"
+              alt=""
+              class="h-3/5 lg:h-3/5"
+            />
+            <h1 class="mt-2 font-semibold text-green-800">Angklung</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/alat_musik/angklung.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1 class="text-center font-medium text-green-800">
+                    Angklung - Jawa Barat
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    Alat musik tradisional dari Jawa Barat ini namanya telah
+                    mendunia. Angklung terbuat dari bilah-bilah bambu yang
+                    disusun sedemikian rupa sehingga saat digetarkan atau
+                    digoyangkan menghasilkan bunyi yang khas. Untuk mendapatkan
+                    nada yang harmonis, angklung harus dimainkan oleh banyak
+                    orang. Sebab satu angklung hanya mewakili satu tangga nada
+                    saja. Angklung termasuk salah satu pesona budaya Indonesia
+                    yang menjadi daya tarik wisatawan mancanegara. Terlebih,
+                    UNESCO telah mengakui angklung sebagai Warisan Budaya Dunia,
+                    dan masuk dalam daftar Representative List of the Intangible
+                    Cultural Heritage of Humanity. Salah satu destinasi
+                    pariwisata Indonesia yang menjadikan angklung sebagai
+                    sebagai daya tariknya adalah Sanggar Seni Saung Mang Udjo di
+                    Bandung.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kacapi -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/alat_musik/Kecapi.png"
+              alt=""
+              class="h-3/5 lg:h-3/5"
+            />
+            <h1 class="mt-2 font-semibold text-green-800">Kacapi</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/alat_musik/Kecapi.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1 class="text-center font-medium text-green-800">
+                    Kacapi - Jawa Barat
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    Kacapi termasuk jenis waditra alat petik, karena bunyi suara
+                    yang dihasilkan bersumber dari bahan kawat atau dawai yang
+                    dimainkan dengan cara dipetik. Dalam istilah musik sunda,
+                    teknik dasar petikan kacapi dikenal mempunyai cara-cara khas
+                    seperti ditoel, disintreuk, dan digembyang
+                    (diranggeum).Menurut fungsinya, waditra kacapi dimainkan
+                    sebagai : Kacapi Indung Kacapi Indung diartikan Kacapi Ibu
+                    atau Induk karena dalam penyajian Kacapi Indung berperan
+                    sebagai Induk atau sumber dari waditra yang menjadi
+                    pasangannya. Jika dilihat dari pola iringan, Kacapi Indung
+                    selalu berperan sebagai pemberi arah untuk permainan Kacapi
+                    Rincik maupun permainan suling. Kacapi Rincik Kacapi Rincik
+                    yaitu kacapi berukuran kecil yang bentuknya hampir sama
+                    dengan Kacapi Indung. Kata "Rincik" artinya kecil. Petikan
+                    Kacapi Rincik mempergunakan tempo atau ritme yang
+                    pendek-pendek dan cepat. Pada dasarnya petikan Kacapi Rincik
+                    merupakan kelipatan dari pada petikan Kacapi Indung.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tifa -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/alat_musik/tifa.png"
+              alt=""
+              class="h-3/5 lg:h-3/5"
+            />
+            <h1 class="mt-2 font-semibold text-green-800">Tifa</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/alat_musik/tifa.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1 class="text-center font-medium text-green-800">
+                    Tifa - Sumatra
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    Berasal dari Timur Indonesia tepatnya daerah Papua dan
+                    Maluku, tifa merupakan alat musik tradisional khas Indonesia
+                    yang memiliki bentuk seperti tabung dan dimainkan dengan
+                    cara dipukul. Tifa terbagi dalam beberapa jenis, yakni
+                    jekir, potong, dasar, dan bas. Umumnya tifa digunakan saat
+                    upacara adat, pertunjukan musik, dan mengiringi tarian
+                    tradisional. Secara bentuk, ada sedikit perbedaan antara
+                    tifa Maluku dan tifa Papua. Di Maluku, tifa memiliki bentuk
+                    tabung dan tidak diberi pegangan. Sedangkan di Papua bagian
+                    tengah tifa dibuat lebih melengkung, serta terdapat pegangan
+                    pada bagian tengah tifa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sasando -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/alat_musik/Sasando.png"
+              alt=""
+              class="h-3/5 lg:h-3/5"
+            />
+            <h1 class="mt-2 font-semibold text-green-800">Sasando</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/alat_musik/Sasando.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1 class="text-center font-medium text-green-800">
+                    Sasando - NTT
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    Sasando adalah salah satu alat musik tradisional dari Pulau
+                    Rote, Nusa Tenggara Timur (NTT). Sasando ini merupakan alat
+                    musik berdawai tanpa mempunyai cord dan dimainkan dengan
+                    cara dipetik dengan menggunakan jari. Alat musik satu ini
+                    hampir sama dengan alat musik tradisional seperti Kecapi
+                    atau Harpa, namun memiliki bentuk dan suara yang sangat
+                    khas. Sasando merupakan salah satu alat musik yang sangat
+                    terkenal, tidak hanya di Indonesia saja, namun juga sampai
+                    luar negeri. Walaupun merupakan alat musik yang dimainkan
+                    dengan cara dipetik, namun sasandu memiliki cara yang
+                    berbeda dengan alat musik petikan lainnya. Sasando biasanya
+                    dimainkan menggunakan kedua tangan dengan arah yang
+                    berlawanan. Tangan kanan berperan untuk memainkan accord,
+                    sedangkan tangan kiri sebagai melodi atau bass.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
