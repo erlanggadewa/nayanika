@@ -77,7 +77,7 @@
   <div class="p-2 mt-5 px-6">
     <div class="alat-musik" id="alat-musik">
       <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
-        Alat Musik
+        Makanan Khas
       </h1>
       <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
       <div
@@ -92,8 +92,8 @@
           pb-3
         "
       >
-        <!-- arbab -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Timphan -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -101,6 +101,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -110,25 +111,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Arbab.png"
+              src="/images/makanan_khas/Timphan.jpg"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Arbab</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Timphan
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -149,9 +144,16 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Arbab.png"
+                  src="/images/makanan_khas/Timphan.jpg"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-2/3 p-5 h-1/2 lg:h-4/5"
+                  class="
+                    lg:ml-3 lg:mr-10
+                    rounded-3xl
+                    lg:w-2/3
+                    p-5
+                    h-1/2
+                    lg:h-4/5
+                  "
                 />
                 <div
                   class="
@@ -171,7 +173,7 @@
                       mb-2
                     "
                   >
-                    Arbab - Sumatera
+                    Timphan
                   </h1>
                   <p
                     class="
@@ -187,19 +189,21 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Instrumen ini terdiri dari 2 bagian yaitu
-                    Arbabnya sendiri (instrumen induknya) dan penggeseknya dalam
-                    bahasa daerah disebut Go Arab. Instrumen ini memakai bahan
-                    tempurung kelapa, kulit kambing, kayu dan dawai.
+                    &emsp;&emsp;&emsp;Timphan adalah kue wajib menjamu tamu di
+                    Aceh. Hampir semua rumah di Aceh menyajikan makanan itu pada
+                    hari raya. Bahkan anggota keluarga yang pulang mudik ke
+                    rumah orang tuanya, menuntut kue itu jauh-jauh hari.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp;Musik Arbab pernah berkembang di daerah
-                    Pidie, Aceh Besar dan Aceh Barat. Arbab ini dipertunjukkan
-                    pada acara-acara keramaian rakyat, seperti hiburan rakyat,
-                    pasar malam dan sebagainya. Sekarang ini tidak pernah
-                    dijumpai arbab ini, diperkirakan sudah mulai punah. Terakhir
-                    kesenian ini dapat dilihat pada zaman pemerintahan Belanda
-                    dan pendudukan Jepang.
+                    &emsp;&emsp;&emsp;Kue itu bisa tahan sepekan. Kue itu
+                    berbentuk pipih lonjong dengan berbungkus daun pisang muda,
+                    seukuran dua atau tiga kali ukuran jari orang dewasa.
+                    Timphan lembek dengan bahan utama tepung dan pisang serta
+                    isi dalamnya kelapa plus gula ataupun srikaya. Isi dalamnya
+                    tergantung selera. Srikaya dibuat dari telur, santan, tepung
+                    terigu, gula dan nangka cincang halus. Bahan ini perlu
+                    dimasak terlebih dahulu sebelum menjadi bagian dalam
+                    timphan.
                   </p>
                 </div>
               </div>
@@ -207,8 +211,8 @@
           </div>
         </div>
 
-        <!-- angklung -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Gado Gado -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -216,6 +220,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -225,25 +230,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/angklung.png"
+              src="/images/makanan_khas/Gado Gado.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Angklung</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Gado Gado
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -264,9 +263,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/angklung.png"
+                  src="/images/makanan_khas/Gado Gado.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
                 />
                 <div
                   class="
@@ -286,7 +285,7 @@
                       mb-2
                     "
                   >
-                    Angklung - Jawa Barat
+                    Gado Gado
                   </h1>
                   <p
                     class="
@@ -302,21 +301,16 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Angklung alat musik tradisional dari Jawa
-                    Barat ini telah mendunia. Angklung terbuat dari bilah -
-                    bilah bambu yang disusun sedemikian rupa sehingga saat
-                    digetarkan atau digoyangkan menghasilkan bunyi yang khas.
-                    Untuk mendapatkan nada yang harmonis, angklung harus
-                    dimainkan oleh banyak orang. Sebab satu angklung hanya
-                    mewakili satu tangga nada saja.
-                    <br />
-                    <br />
-                    &emsp;&emsp;&emsp;Angklung termasuk salah satu pesona budaya
-                    Indonesia yang menjadi daya tarik wisatawan mancanegara.
-                    Terlebih, UNESCO telah mengakui angklung sebagai Warisan
-                    Budaya Dunia, dan masuk dalam daftar
-                    <em>List of the Intangible Cultural Heritage of Humanity</em
-                    >.
+                    &emsp;&emsp;&emsp;Gado - Gado makanan khas Jakarta. Bahannya
+                    terdiri dari bermacam - macam sayuran seperti bayam,
+                    kangkung, daun singkong, taoge, nangka, kacang panjang,
+                    timun dan daun pare, kadang pakai jagung rebus. Bumbunya
+                    adalah kacang tanah yang telah digoreng ditumbuk pakai bumbu
+                    cabe, garam, terasi, kencur, bawang putih, asam muda, gula
+                    semuanya diulek dicampur air sedikit hingga menjadi kuah
+                    untuk dicampur dengan sayuran rebus. Gado gado itu di
+                    atasnya ditambahkan bawang goreng dan kerupuk, ada juga yang
+                    menyantapnya dengan ketupat lontong atau nasi.
                   </p>
                 </div>
               </div>
@@ -324,8 +318,8 @@
           </div>
         </div>
 
-        <!-- Kacapi -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- ketoprak -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -333,6 +327,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -342,25 +337,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Kecapi.png"
+              src="/images/makanan_khas/ketoprak.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Kacapi</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Ketoprak
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -381,9 +370,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Kecapi.png"
+                  src="/images/makanan_khas/ketoprak.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
                 />
                 <div
                   class="
@@ -403,7 +392,7 @@
                       mb-2
                     "
                   >
-                    Kacapi - Jawa Barat
+                    Ketoprak
                   </h1>
                   <p
                     class="
@@ -419,29 +408,13 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Kacapi termasuk jenis waditra alat petik,
-                    karena bunyi suara yang dihasilkan bersumber dari bahan
-                    kawat atau dawai yang dimainkan dengan cara dipetik. Dalam
-                    istilah musik sunda, teknik dasar petikan kacapi dikenal
-                    mempunyai cara - cara khas seperti ditoel, disintreuk, dan
-                    digembyang (diranggeum). Menurut fungsinya, waditra kacapi
-                    dimainkan sebagai :
-                    <br />
-                    <br />
-                    &emsp;&emsp;&emsp;1. Kacapi Indung : diartikan Kacapi Ibu
-                    atau Induk karena dalam penyajiannya kacapi indung berperan
-                    sebagai induk atau sumber dari waditra yang menjadi
-                    pasangannya. Jika dilihat dari pola iringan, kacapi selalu
-                    berperan sebagai pemberi arah untuk permainan kacapi rincik
-                    maupun permainan suling.
-                    <br />
-                    <br />
-                    &emsp;&emsp;&emsp;2. Kacapi Rincik yaitu kacapi berukuran
-                    kecil yang bentuknya hampir sama dengan kacapi indung. Kata
-                    "Rincik" artinya kecil. Petikan kacapi rincik mempergunakan
-                    tempo atau ritme yang pendek-pendek dan cepat. Pada dasarnya
-                    petikan Kacapi Rincik merupakan kelipatan dari pada petikan
-                    kacapi indung.
+                    &emsp;&emsp;&emsp;Ketoprak merupakan nama salah satu jenis
+                    makanan khas daerah Jakarta. Bahan-bahan untuk membuatnya
+                    antara lain tahu digoreng, ketupat, tauge, mihun, kecap, dan
+                    bawang goreng. Semua bahan tersebut dijadikan satu dan
+                    ditata dalam piring atau mangkok, kemudian disiram dengan
+                    sambal kacang, ditambah kecap dan kemudian ditaburi bawang
+                    goreng di atasnya.
                   </p>
                 </div>
               </div>
@@ -449,8 +422,8 @@
           </div>
         </div>
 
-        <!-- Tifa -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Tahu Gejrot -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -458,6 +431,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -467,25 +441,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/tifa.png"
+              src="/images/makanan_khas/Tahu Gejrot.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Tifa</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tahu Gejrot
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -506,9 +474,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/tifa.png"
+                  src="/images/makanan_khas/Tahu Gejrot.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
                 />
                 <div
                   class="
@@ -528,7 +496,7 @@
                       mb-2
                     "
                   >
-                    Tifa - Sumatra
+                    Tahu Gejrot
                   </h1>
                   <p
                     class="
@@ -544,20 +512,23 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp; Tifa berasal dari timur Indonesia
-                    tepatnya daerah Papua dan Maluku, tifa merupakan alat musik
-                    tradisional khas Indonesia yang memiliki bentuk seperti
-                    tabung dan dimainkan dengan cara dipukul. Tifa terbagi dalam
-                    beberapa jenis, yakni jekir, potong, dasar, dan bas. Umumnya
-                    tifa digunakan saat upacara adat, pertunjukan musik, dan
-                    mengiringi tarian tradisional.
+                    &emsp;&emsp;&emsp;Salah satu makanan khas Cirebon adalah
+                    tahu gejrot, seperti namanya makanan ini berbahan utama
+                    tahu. Namun, jenis tahu yang disajikan pada racikan ini
+                    memiliki kekhasan tersendiri. Tahu matang berongga dengan
+                    kulit tahu yang renyah dan daging tahu yang tipis menepel
+                    pada kulitnya membuat keunikan tekstur tahu yang berbeda
+                    dengan jenis tahu lainnya di Indonesia.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp; Secara bentuk, ada sedikit perbedaan
-                    antara tifa Maluku dan tifa Papua. Di Maluku, tifa memiliki
-                    bentuk tabung dan tidak diberi pegangan. Sedangkan di Papua
-                    bagian tengah tifa dibuat lebih melengkung, serta terdapat
-                    pegangan pada bagian tengah tifa.
+                    &emsp;&emsp;&emsp;Tahu ini disajikan dengan kuah manis gula
+                    merah yang dicampur dengan tumbukan bawang merah mentah dan
+                    cabe rawit sehingga rasa pedas manis menjadi kekhasan rasa
+                    tahu ini. Semakin unik karena Tahu Gejrot ini disajikan
+                    diatas piring tembikar sehingga nuansa tradisionalnya
+                    semakin menambah cita rasa Cirebon. Biasanya, makanan ini
+                    banyak dijajakan oleh pedagang pada siang hari di pusat -
+                    pusat keramaian kota.
                   </p>
                 </div>
               </div>
@@ -565,8 +536,8 @@
           </div>
         </div>
 
-        <!-- sasando -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Nasi Brongkos -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -574,6 +545,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -583,25 +555,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Sasando.png"
+              src="/images/makanan_khas/Nasi Brongkos.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Sasando</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Nasi Brongkos
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -622,9 +588,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Sasando.png"
+                  src="/images/makanan_khas/Nasi Brongkos.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
                 />
                 <div
                   class="
@@ -635,8 +601,16 @@
                     overflow-y-hidden
                   "
                 >
-                  <h1 class="text-center font-medium text-green-800">
-                    Sasando - NTT
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Nasi Brongkos
                   </h1>
                   <p
                     class="
@@ -652,24 +626,125 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp; Sasando adalah salah satu alat musik
-                    tradisional dari Pulau Rote, Nusa Tenggara Timur (NTT).
-                    Sasando ini merupakan alat musik berdawai tanpa mempunyai
-                    cord dan dimainkan dengan cara dipetik dengan menggunakan
-                    jari. Alat musik satu ini hampir sama dengan alat musik
-                    tradisional seperti Kecapi atau Harpa, namun memiliki bentuk
-                    dan suara yang sangat khas. Sasando merupakan salah satu
-                    alat musik yang sangat terkenal, tidak hanya di Indonesia
-                    saja, namun juga sampai luar negeri.
+                    &emsp;&emsp;&emsp;Nasi Brongkos merupakan masakan khas dari
+                    Kabupaten Demak. Nasi brongkos adalah masakan yang menjadi
+                    santapan pagi alias untuk sarapan. Sedangkan, jika anda
+                    ingin membuatnya sendiri berikut bahan bahan untuk membuat
+                    nasi brongkos adalah buah kentang, buncis, kacang merah,
+                    santan, serai, jahe, lengkuas, daun salam, minyak goreng,
+                    garam. Sedangkan, bumbunya terbuat dari nangka muda, bawang
+                    putih, bawang merah, asam jawa, gula.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rawon -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/makanan_khas/Rawon.png"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Rawon</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/makanan_khas/Rawon.png"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rawon
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rawon atau nasi rawon (karena selalu
+                    disajikan dengan nasi) adalah menu berupa sup daging dengan
+                    bumbu berwarna hitam karena mengandung kluwek. Meski dikenal
+                    sebagai masakan khas Jawa Timur seperti Surabaya,
+                    Probolinggo Lamongan, dan Pasuruan, dikenal pula oleh
+                    masyarakat Jawa Tengah sebelah timur (daerah Surakarta).
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp; Walaupun merupakan alat musik yang
-                    dimainkan dengan cara dipetik, namun sasando memiliki cara
-                    yang berbeda dengan alat musik petikan lainnya. Sasando
-                    biasanya dimainkan menggunakan kedua tangan dengan arah yang
-                    berlawanan. Tangan kanan berperan untuk memainkan
-                    <em>accord</em>, sedangkan tangan kiri sebagai melodi atau
-                    <em>bass</em>.
+                    &emsp;&emsp;&emsp;Daging untuk rawon umumnya adalah daging
+                    sapi yang dipotong kecil - kecil. Bumbu supnya sangat khas
+                    Indonesia, yaitu campuran bawang merah, bawang putih,
+                    lengkuas (laos), ketumbar, serai, kunir, cabai, kluwek,
+                    garam, serta minyak nabati. Semua bahan ini (kecuali serai
+                    dan lengkuas) dihaluskan, lalu ditumis sampai harum.
+                    Campuran bumbu ini kemudian dimasukkan dalam kaldu rebusan
+                    daging bersama dengan daging.
                   </p>
                 </div>
               </div>

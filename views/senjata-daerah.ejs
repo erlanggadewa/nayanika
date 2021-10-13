@@ -77,7 +77,7 @@
   <div class="p-2 mt-5 px-6">
     <div class="alat-musik" id="alat-musik">
       <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
-        Alat Musik
+        Senjata Daerah
       </h1>
       <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
       <div
@@ -92,8 +92,8 @@
           pb-3
         "
       >
-        <!-- arbab -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Golok -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -101,6 +101,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -110,25 +111,17 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Arbab.png"
+              src="images/senjata/Golok.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Arbab</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Golok</h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -149,9 +142,16 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Arbab.png"
+                  src="images/senjata/Golok.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-2/3 p-5 h-1/2 lg:h-4/5"
+                  class="
+                    lg:ml-3 lg:mr-10
+                    rounded-3xl
+                    lg:w-2/3
+                    p-5
+                    h-1/2
+                    lg:h-4/5
+                  "
                 />
                 <div
                   class="
@@ -171,7 +171,7 @@
                       mb-2
                     "
                   >
-                    Arbab - Sumatera
+                    Golok
                   </h1>
                   <p
                     class="
@@ -187,19 +187,34 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Instrumen ini terdiri dari 2 bagian yaitu
-                    Arbabnya sendiri (instrumen induknya) dan penggeseknya dalam
-                    bahasa daerah disebut Go Arab. Instrumen ini memakai bahan
-                    tempurung kelapa, kulit kambing, kayu dan dawai.
+                    &emsp;&emsp;&emsp;Golok merupakan salah satu senjata
+                    tradisional masyarakat Betawi, yang digunakan dalam
+                    kehidupan sehari - hari dan sudah menyatu dalam kehidupan
+                    mereka. Setiap keluarga Betawi pasti memilikinya, bahkan
+                    setiap lelaki pada zaman dahulu selalu membawanya kemanapun
+                    mereka pergi. Namun karena perkembangan zaman serta
+                    teknologi sehingga golok sudah dianggap tidak praktis lagi
+                    dan mulai jarang ditemukan masyarakat Betawi yang
+                    memilikinya, kecuali yang masih populer golok gablongan
+                    (golok kerja). Walaupun secara fisik golok tidak lagi
+                    menyertai ke mana seorang lak-laki pergi, namun berbagai
+                    kesenian yang tumbuh di kalangan orang Betawi, terutama
+                    lenong selalu menampilkan tokoh - tokoh yang menyelipkan
+                    golok sebagai senjata andalan, bahkan ada beberapa pantun
+                    yang diciptakan berkaitan dengan golok.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp;Musik Arbab pernah berkembang di daerah
-                    Pidie, Aceh Besar dan Aceh Barat. Arbab ini dipertunjukkan
-                    pada acara-acara keramaian rakyat, seperti hiburan rakyat,
-                    pasar malam dan sebagainya. Sekarang ini tidak pernah
-                    dijumpai arbab ini, diperkirakan sudah mulai punah. Terakhir
-                    kesenian ini dapat dilihat pada zaman pemerintahan Belanda
-                    dan pendudukan Jepang.
+                    &emsp;&emsp;&emsp; Golok dalam masyarakat Betawi dibedakan
+                    ke dalam dua kategori, yakni golok kerja (gablongan bendo
+                    atau golok dapur) digunakan untuk keperluan rumah tangga.
+                    Kedua golok simpenan (sorenan) ini dibedakan lagi menjadi
+                    dua yakni sorenan simpenan untuk memotong hewan dan sorenan
+                    pinggang. Ada juga yang berbentuk trapesium. Gagangnya
+                    terbuat dari kayu yang keras seperti kayu jambu atau gading
+                    dan ada juga dari tulang hewan. Badannya terbuat dari besi
+                    bekas "Per" kendaraan bermotor (truk). Sarungnya juga
+                    terbuat dari kayu yang kuat dan kemudian dirapatkan dengan
+                    tali.
                   </p>
                 </div>
               </div>
@@ -207,8 +222,8 @@
           </div>
         </div>
 
-        <!-- angklung -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Kujang -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -216,6 +231,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -225,25 +241,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/angklung.png"
+              src="images/senjata/Kujang.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Angklung</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Kujang
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -264,9 +274,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/angklung.png"
+                  src="images/senjata/Kujang.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
                 />
                 <div
                   class="
@@ -286,7 +296,7 @@
                       mb-2
                     "
                   >
-                    Angklung - Jawa Barat
+                    Kujang
                   </h1>
                   <p
                     class="
@@ -302,21 +312,18 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Angklung alat musik tradisional dari Jawa
-                    Barat ini telah mendunia. Angklung terbuat dari bilah -
-                    bilah bambu yang disusun sedemikian rupa sehingga saat
-                    digetarkan atau digoyangkan menghasilkan bunyi yang khas.
-                    Untuk mendapatkan nada yang harmonis, angklung harus
-                    dimainkan oleh banyak orang. Sebab satu angklung hanya
-                    mewakili satu tangga nada saja.
+                    &emsp;&emsp;&emsp;Kujang adalah senjata tradisional yang
+                    dekat hubungannya dengan kehidupan masyarakat Jawa Barat
+                    yang agraris. Secara etimologi, Kujang berasal dari kata
+                    “Kudi” yang artinya sebuah senjata atau jimat yang memiliki
+                    kekuatan gaib dan “Hyang" berarti dewa atau kuasa.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp;Angklung termasuk salah satu pesona budaya
-                    Indonesia yang menjadi daya tarik wisatawan mancanegara.
-                    Terlebih, UNESCO telah mengakui angklung sebagai Warisan
-                    Budaya Dunia, dan masuk dalam daftar
-                    <em>List of the Intangible Cultural Heritage of Humanity</em
-                    >.
+                    &emsp;&emsp;&emsp;Berdasarkan bentuknya, Kujang memiliki 6
+                    jenis yang berbeda yaitu Kujang Ciung, Kujang Kuntul, Kujang
+                    Jago, Kujang Bangkong, Kujang Badak, dan Kujang Naga.
+                    Seiring perkembangan zaman, Kujang kini menjadi senjata
+                    pusaka yang menjadi simbol prestise dari pemiliknya.
                   </p>
                 </div>
               </div>
@@ -324,8 +331,8 @@
           </div>
         </div>
 
-        <!-- Kacapi -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Keris -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -333,6 +340,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -342,25 +350,17 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Kecapi.png"
+              src="images/senjata/Keris.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Kacapi</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Keris</h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -381,9 +381,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Kecapi.png"
+                  src="images/senjata/Keris.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 p-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
                 />
                 <div
                   class="
@@ -403,7 +403,7 @@
                       mb-2
                     "
                   >
-                    Kacapi - Jawa Barat
+                    Keris
                   </h1>
                   <p
                     class="
@@ -419,29 +419,19 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp;Kacapi termasuk jenis waditra alat petik,
-                    karena bunyi suara yang dihasilkan bersumber dari bahan
-                    kawat atau dawai yang dimainkan dengan cara dipetik. Dalam
-                    istilah musik sunda, teknik dasar petikan kacapi dikenal
-                    mempunyai cara - cara khas seperti ditoel, disintreuk, dan
-                    digembyang (diranggeum). Menurut fungsinya, waditra kacapi
-                    dimainkan sebagai :
-                    <br />
-                    <br />
-                    &emsp;&emsp;&emsp;1. Kacapi Indung : diartikan Kacapi Ibu
-                    atau Induk karena dalam penyajiannya kacapi indung berperan
-                    sebagai induk atau sumber dari waditra yang menjadi
-                    pasangannya. Jika dilihat dari pola iringan, kacapi selalu
-                    berperan sebagai pemberi arah untuk permainan kacapi rincik
-                    maupun permainan suling.
-                    <br />
-                    <br />
-                    &emsp;&emsp;&emsp;2. Kacapi Rincik yaitu kacapi berukuran
-                    kecil yang bentuknya hampir sama dengan kacapi indung. Kata
-                    "Rincik" artinya kecil. Petikan kacapi rincik mempergunakan
-                    tempo atau ritme yang pendek-pendek dan cepat. Pada dasarnya
-                    petikan Kacapi Rincik merupakan kelipatan dari pada petikan
-                    kacapi indung.
+                    &emsp;&emsp;&emsp;Keris terdaftar sebagai warisan budaya tak
+                    benda dari Indonesia oleh UNESCO pada tahun 2008. Keris
+                    yaitu sebuah belati asimetris berasal dari negara Indonesia.
+                    Baik senjata maupun benda spiritual, keris dianggap memiliki
+                    kekuatan magis. Keris yang paling pertama diketahui berasal
+                    dari abad kesepuluh dan kemungkinan besar telah menyeluruh
+                    dari pulau Jawa dan beredar di wilayah Asia Tenggara. Bilah
+                    keris biasanya sempit dengan alas yang lebar dan asimetris.
+                    Sarungnya biasa dibuat dari kayu, walaupun contoh dari
+                    gading, bahkan emas. Nilai estetika keris terdiri dhapur
+                    (bentuk dan desain bilahnya, dengan 40 varian), pamor (pola
+                    hiasan paduan logam pada bilahnya, dengan kurang lebih 120
+                    varian), dan tangguh yang mengacu pada usia dan asal.
                   </p>
                 </div>
               </div>
@@ -449,8 +439,8 @@
           </div>
         </div>
 
-        <!-- Tifa -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Rencong -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -458,6 +448,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -467,25 +458,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/tifa.png"
+              src="images/senjata/Rencong.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Tifa</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rencong
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -506,9 +491,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/tifa.png"
+                  src="images/senjata/Rencong.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
                 />
                 <div
                   class="
@@ -528,7 +513,7 @@
                       mb-2
                     "
                   >
-                    Tifa - Sumatra
+                    Rencong
                   </h1>
                   <p
                     class="
@@ -544,20 +529,29 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp; Tifa berasal dari timur Indonesia
-                    tepatnya daerah Papua dan Maluku, tifa merupakan alat musik
-                    tradisional khas Indonesia yang memiliki bentuk seperti
-                    tabung dan dimainkan dengan cara dipukul. Tifa terbagi dalam
-                    beberapa jenis, yakni jekir, potong, dasar, dan bas. Umumnya
-                    tifa digunakan saat upacara adat, pertunjukan musik, dan
-                    mengiringi tarian tradisional.
+                    &emsp;&emsp;&emsp;Rencong adalah senjata pusaka bagi rakyat
+                    Aceh dan merupakan simbol keberanian, keperkasaan,
+                    pertahanan diri dan kepahlawanan aceh dari abad ke abad.
+                    Menurut salah satu sumber rencong telah dikenal pada awal
+                    Islam Kesultanan di abad ke-13.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp; Secara bentuk, ada sedikit perbedaan
-                    antara tifa Maluku dan tifa Papua. Di Maluku, tifa memiliki
-                    bentuk tabung dan tidak diberi pegangan. Sedangkan di Papua
-                    bagian tengah tifa dibuat lebih melengkung, serta terdapat
-                    pegangan pada bagian tengah tifa.
+                    &emsp;&emsp;&emsp;Di zaman Kerajaan Aceh Darussalam rencong
+                    ini tidak pernah lepas dari hampir setiap pinggang (selalu
+                    diselipkan di pinggang depan) rakyat Aceh yang rata-rata
+                    punya keberanian luar biasa baik pria maupun wanita karena
+                    rencong ini bagi orang Aceh ibarat tentara dengan bedilnya
+                    yang merupakan simbol keberanian, kebesaran, ketinggian
+                    martabat dan keperkasaan orang Aceh sehingga, orang-orang
+                    portugis atau portugal harus berpikir panjang untuk
+                    mendekati orang Aceh. Di masa ini Rencong mempunyai
+                    tingkatan yang menjadi ciri khas strata masyarakat, untuk
+                    seorang Raja atau Sultan dan Ratu atau Sultanah untuk
+                    sarungnya terbuat dari gading dan untuk belatinya terbuat
+                    dari emas hingga sampai ke strata masyarakat bawah untuk
+                    sarung terbuat dari dari tanduk kerbau ataupun kayu dan
+                    untuk belati terbuat dari kuningan atau besi putih
+                    tergantung kemampuan ekonomi masing - masing.
                   </p>
                 </div>
               </div>
@@ -565,8 +559,8 @@
           </div>
         </div>
 
-        <!-- sasando -->
-        <div x-data="{'open' : false}" class="cursor-pointer">
+        <!-- Parang Salawaku -->
+        <div x-data="{'open' : false}" class="">
           <div
             @click="open = !open"
             class="
@@ -574,6 +568,7 @@
               transform
               hover:scale-105 hover:shadow-2xl hover:ring-4
               rounded-2xl
+              cursor-pointer
               flex flex-col
               items-center
               justify-evenly
@@ -583,25 +578,19 @@
             style="background-color: #c4c4c44d"
           >
             <img
-              src="images/alat_musik/Sasando.png"
+              src="images/senjata/Parang Salawaku.png"
               alt=""
-              class="h-3/5 lg:h-3/5"
+              class="h-3/5 lg:h-3/5 rounded-xl"
             />
-            <h1 class="mt-2 font-semibold text-green-800">Sasando</h1>
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Parang Salawaku
+            </h1>
           </div>
 
           <!-- detail -->
           <div x-show="open">
             <div
-              class="
-                cursor-default
-                absolute
-                inset-0
-                z-50
-                flex
-                justify-center
-                items-center
-              "
+              class="absolute inset-0 z-50 flex justify-center items-center"
               style="background-color: rgba(128, 128, 128, 0.541)"
             >
               <div
@@ -622,9 +611,9 @@
                 @click.outside="open = !open"
               >
                 <img
-                  src="images/alat_musik/Sasando.png"
+                  src="images/senjata/Parang Salawaku.png"
                   alt=""
-                  class="lg:ml-3 lg:mr-10 lg:w-1/2 h-1/2 mt-5"
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
                 />
                 <div
                   class="
@@ -635,8 +624,16 @@
                     overflow-y-hidden
                   "
                 >
-                  <h1 class="text-center font-medium text-green-800">
-                    Sasando - NTT
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Parang Salawaku
                   </h1>
                   <p
                     class="
@@ -652,24 +649,21 @@
                       lg:max-h-96
                     "
                   >
-                    &emsp;&emsp;&emsp; Sasando adalah salah satu alat musik
-                    tradisional dari Pulau Rote, Nusa Tenggara Timur (NTT).
-                    Sasando ini merupakan alat musik berdawai tanpa mempunyai
-                    cord dan dimainkan dengan cara dipetik dengan menggunakan
-                    jari. Alat musik satu ini hampir sama dengan alat musik
-                    tradisional seperti Kecapi atau Harpa, namun memiliki bentuk
-                    dan suara yang sangat khas. Sasando merupakan salah satu
-                    alat musik yang sangat terkenal, tidak hanya di Indonesia
-                    saja, namun juga sampai luar negeri.
+                    &emsp;&emsp;&emsp;Parang Salawaku adalah sepasang senjata
+                    tradisional dari Maluku. Parang Salawaku terdiri dari parang
+                    (pisau Panjang) dan salawaku ( perisai ) yang pada masa lalu
+                    adalah senjata yang digunakan untuk berperang. Bagi
+                    masyarakat Maluku, parang dan salawaku adalah simbol
+                    kemerdekaan rakyat.
                     <br />
                     <br />
-                    &emsp;&emsp;&emsp; Walaupun merupakan alat musik yang
-                    dimainkan dengan cara dipetik, namun sasando memiliki cara
-                    yang berbeda dengan alat musik petikan lainnya. Sasando
-                    biasanya dimainkan menggunakan kedua tangan dengan arah yang
-                    berlawanan. Tangan kanan berperan untuk memainkan
-                    <em>accord</em>, sedangkan tangan kiri sebagai melodi atau
-                    <em>bass</em>.
+                    &emsp;&emsp;&emsp;Senjata ini dapat disaksikan pada saat
+                    tarian cakalele yaitu tarian yang menyimbolkan kekuatan kaum
+                    pria Maluku. Parang ditangan kanan penari melambangkan
+                    keberanian sementara salawaku di tangan kiri melambangkan
+                    perjuangan untuk mendapatkan keadilan. Bukan sekedar simbol
+                    masyarakat Maluku, parang dan salawaku juga telah dibuat
+                    produk ekraf khas Maluku.
                   </p>
                 </div>
               </div>

@@ -70,3 +70,34 @@
   filter: var(--tw-filter);
   --tw-drop-shadow: drop-shadow(10px 50px 50px rgb(252, 252, 252));
 } */
+.clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.to-cyan-400 {
+  --tw-gradient-to: #22d3ee;
+}
+.via-cyan-500 {
+  --tw-gradient-stops: var(--tw-gradient-from), #06b6d4,
+    var(--tw-gradient-to, rgba(6, 182, 212, 0));
+}
+
+input[type="radio"] + div span {
+  transition: background 0.2s, transform 0.2s;
+}
+
+input[type="radio"] + div span:hover,
+input[type="radio"] + div:hover span {
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked + div span {
+  background-color: #3490dc;
+  /* box-shadow: 0px 0px 0px 2px white inset; */
+}
+
+input[type="radio"]:checked + div {
+  color: #3490dc;
+}

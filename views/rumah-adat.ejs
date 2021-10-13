@@ -1,0 +1,896 @@
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="">
+    <input
+      type="text"
+      aria-label="What do you want to learn?"
+      placeholder="What do you want to learn?"
+      class="
+        w-full
+        bg-gray-100
+        text-sm text-black
+        placeholder-gray-500
+        border-gray-200
+        rounded-md
+        py-0
+        pl-3
+        sm:pl-10
+        border-2
+        focus:border-0
+        focus:border-light-blue-500
+        focus:outline-none
+        focus:ring-2
+        focus:ring-light-blue-500
+      "
+    />
+    <button
+      type="button"
+      class="
+        border-2 border-green-500
+        text-green-500
+        rounded-md
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
+        transition
+        duration-500
+        ease
+        text-sm
+        sm:text-base
+        select-none
+        hover:text-white hover:bg-green-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      Masuk
+    </button>
+    <button
+      type="button"
+      class="
+        border-2 border-blue-500
+        text-blue-500
+        rounded-md
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
+        transition
+        duration-500
+        ease
+        select-none
+        hover:text-white hover:bg-blue-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      <span>Daftar</span>
+    </button>
+  </div>
+  <div class="p-2 mt-5 px-6">
+    <div class="alat-musik" id="alat-musik">
+      <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
+        Rumah Adat
+      </h1>
+      <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
+      <div
+        class="
+          mt-6
+          grid grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          w-full
+          gap-5
+          pb-3
+        "
+      >
+        <!-- rumoh aceh -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Rumoh Aceh.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rumoh Aceh
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Rumoh Aceh.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl lg:w-1/2 p-5 h-1/2"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rumoh Aceh
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rumah Aceh atau Rumoh Aceh merupakan
+                    bentuk tempat kediaman orang Aceh tempo dulu dan sekarang
+                    hampir hilang, hanya tersisa di beberapa tempat saja di
+                    Aceh. Rumah ini telah diabadikan di Banda Aceh (komplek
+                    Kantor Museum Aceh) dan di Taman Mini Indonesia Indah (TMII)
+                    serta rumah Cut Nyak Dhien yang ada di Desa Lampisang, 10 km
+                    dari pusat Kota Banda Aceh. Di dalam Rumah Aceh yang
+                    terletak di komplek Museum Aceh banyak terdapat barang -
+                    barang peninggalan tempo dulu yang sering digunakan oleh
+                    orang Aceh diantaranya peudeung on jok, jingki, guci,
+                    berandam atau tempat menyimpan padi dan lain - lain. Rumah
+                    Aceh ini terdiri dari 44 tiang dan mempunyai 2 tangga depan
+                    dan belakang.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Joglo -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Joglo.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">Joglo</h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Joglo.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    p-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Joglo
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Joglo Pencu mempunyai karakter khas Jawa
+                    Pesisiran, yaitu egaliter, terbuka dan lugas. Joglo Pencu
+                    memiliki atap genteng yang disebut atap pencu pada bangunan
+                    yang didominasi lebih pada seni ukirnya yang sederhana khas
+                    Kabupaten Kudus merupakan perpaduan gaya dari budaya Jawa
+                    (Hindu), Persia (Islam), Cina (Tionghoa) dan Eropa
+                    (Belanda). Arsitektur tradisional rumah adat Kudus merupakan
+                    warisan budaya yang mempunyai gaya seni bangunan tradisional
+                    yang bentuk, struktur, fungsi, ragam hias dan filosofinya
+                    merupakan perpaduan budaya Pra Islam, Cina dan budaya Islam
+                    di Kudus pada jamannya. Ketiga unsur pokok warisan budaya
+                    nenek moyang tersebut menyatu dalam bentuk rumah adat Kudus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Saung Ranggon -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Saung Ranggon.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Saung Ranggon
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Saung Ranggon.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    p-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Saung Ranggon
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Saung Ranggon terletak di Kampung
+                    Cikedokan, Desa Cikedokan, Kecamatan Cikarang Barat. Saung
+                    ranggon menurut kuncen bapak Tholib dibangun sekitar pada
+                    abad XVI oleh Pangeran Rangga, putra Pangeran Jayakarta.
+                    Saung ini kemudian terkenal dengan sebutan saung ranggon.
+                    Dalam bahasa Sunda, saung berarti rumah yang berada di
+                    tengah ladang atau huma, berfungsi sebagai tempat menunggu
+                    padi atau tanaman palawija lainnya yang sebentar lagi akan
+                    dipanen. Biasanya, saung dibuat dengan ketinggian di atas 3
+                    sampai 4 meter di atas permukaan tanah. Hal ini untuk
+                    menjaga keselamatan tanaman dari gangguan hewan buas,
+                    seperti babi hutan, harimau.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rumah Gadang -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Rumah Gadang.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rumah Gadang
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Rumah Gadang.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    mt-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rumah Gadang
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rumah Gadang adalah rumah tradisional dari
+                    suku Minangkabau. Menurut bentuknya, rumah adat ini disebut
+                    rumah gonjong atau rumah bagonjong (rumah bergonjong),
+                    karena bentuk atapnya yang bergonjong runcing menjulang.
+                    Jika menurut ukurannya, tergantung pada jumlah lanjarnya
+                    (ruas dari depan ke belakang). Sedangkan, ruangan yang
+                    berjajar dari kiri ke kanan disebut ruang. Rumah yang
+                    berlanjar dua dinamakan lipek pandan (lipat pandan). Umumnya
+                    lipek pandan memakai dua gonjong. Rumah yang berlanjar tiga
+                    disebut balah bubuang (belah bubung). Atapnya bergonjong
+                    empat. Sedangkan, yang berlanjar empat disebut gajah maharam
+                    (gajah terbenam). Biasanya gajah maharam memakai gonjong
+                    enam atau lebih.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rumah Bolon -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Rumah Bolon.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rumah Bolon
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Rumah Bolon.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    mt-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rumah Bolon
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rumah Bolon merupakan rumah khas suku
+                    Batak, Sumatra Utara. Rumah Bolon ini berbentuk panggung
+                    memanjang dengan panjang 29,44 meter, lebar 7 meter dan
+                    tinggi 5 meter. Kebanyakan bagian bangunan ini berwarna
+                    coklat muda yang divariasikan dengan warna putih, merah, dan
+                    hitam. Rumah Bolon ini tidak memiliki jendela, tetapi
+                    dilengkapi dengan jeruji - jeruji kayu pada bagian dinding
+                    yang berfungsi sebagai sirkulasi udara maupun untuk melihat
+                    ke luar. Rumah Bolon ini dibangun tanpa menggunakan paku
+                    sama sekali. Sebagai penggantinya, para pembuat rumah bolon
+                    dulu menggunakan pasak dan tali pilihan yang sangat kuat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rumah Limas -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Rumah Limas.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Rumah Limas
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Rumah Limas.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    mt-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Rumah Limas
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Rumah Limas ini berbentuk limas.
+                    Bangunannya bertingkat - tingkat dengan filosofi budaya
+                    tersendiri untuk setiap tingkatnya. Tingkat - tingkat ini
+                    disebut masyarakat sebagai bengkilas. Adat yang kental
+                    sangat mendasari pembangunan rumah limas. Tingkatan yang
+                    dimiliki rumah ini disertai dengan lima ruangan yang disebut
+                    dengan kekijing. Hal ini menjadi simbol atas lima jenjang
+                    kehidupan bermasyarakat, yaitu usia, jenis, bakat, pangkat
+                    dan martabat. Detail setiap tingkatnya pun berbeda-beda. Di
+                    Indonesia, rumah limas banyak terdapat didaerah Sumatera
+                    Selatan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dalam Loka -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="/images/rumah_adat/Dalam Loka.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Dalam Loka
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="/images/rumah_adat/Dalam Loka.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    px-2
+                    rounded-3xl
+                    rou
+                    lg:w-1/2
+                    h-1/2
+                    mt-5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Dalam Loka
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Dalam Loka terbuat dari kayu yang dibangun
+                    pada masa pemerintahan Sultan Muhammad Jalaluddin Syah III
+                    (sekitar tahun 1885 M). Saat ini digunakan sebagai "Museum
+                    Daerah Sumbawa" tempat penyimpanan benda-benda sejarah
+                    Kabupaten Sumbawa. Istana ini merupakan dua bangunan kembar
+                    ditopang atas tiang kayu besar sebanyak 99 buah, sesuai
+                    dengan sifat Allah dalam Al - Qur'an (Asma'ul Husna). Di
+                    Dalam Loka ini kita dapat melihat ukiran motif khas daerah
+                    Sumbawa, sebagai ornamen pada kayu bangunannya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

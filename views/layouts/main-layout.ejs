@@ -5,23 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      rel="stylesheet"
-    />
-
     <!-- import alpinejs -->
-    <script defer src="javascripts/alpine.min.js" type="module"></script>
+    <script defer src="/javascripts/alpine.min.js" type="module"></script>
 
-    <link rel="stylesheet" href="stylesheets/tailwind.css" />
-    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/tailwind.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
 
     <title>Kiranagara</title>
   </head>
   <body class="">
-    <div class="flex h-screen sm:p-5">
-      <%- include('../partials/navbar.ejs') -%>
+    <div class="h-screen <%= navbar ? 'flex sm:p-4 sm:px-5 ' : '' %>">
+      <% if (navbar) { %> <%- include('../partials/navbar.ejs') -%> <% } %>
 
       <!-- body from ejs layouts -->
       <%- body %>

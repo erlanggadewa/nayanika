@@ -1,0 +1,1022 @@
+<div class="h-full bg-white w-full overflow-y-auto">
+  <div
+    class="w-full h-20 sm:hidden flex justify-center items-center"
+    style="background-color: #d7e2e8"
+  >
+    <h1 class="text-green-700 uppercase font-medium text-2xl">Kiranagara</h1>
+  </div>
+  <div class="flex sm:py-2 px-6 my-4 sm:my-0" id="">
+    <input
+      type="text"
+      aria-label="What do you want to learn?"
+      placeholder="What do you want to learn?"
+      class="
+        w-full
+        bg-gray-100
+        text-sm text-black
+        placeholder-gray-500
+        border-gray-200
+        rounded-md
+        py-0
+        pl-3
+        sm:pl-10
+        border-2
+        focus:border-0
+        focus:border-light-blue-500
+        focus:outline-none
+        focus:ring-2
+        focus:ring-light-blue-500
+      "
+    />
+    <button
+      type="button"
+      class="
+        border-2 border-green-500
+        text-green-500
+        rounded-md
+        px-2
+        sm:px-4 sm:py-2
+        ml-2
+        sm:ml-10
+        transition
+        duration-500
+        ease
+        text-sm
+        sm:text-base
+        select-none
+        hover:text-white hover:bg-green-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      Masuk
+    </button>
+    <button
+      type="button"
+      class="
+        border-2 border-blue-500
+        text-blue-500
+        rounded-md
+        py-1
+        sm:px-4 sm:py-2
+        px-2
+        ml-2
+        sm:mx-4
+        text-sm
+        sm:text-base
+        transition
+        duration-500
+        ease
+        select-none
+        hover:text-white hover:bg-blue-600
+        focus:outline-none focus:shadow-outline
+      "
+    >
+      <span>Daftar</span>
+    </button>
+  </div>
+  <div class="p-2 mt-5 px-6">
+    <div class="alat-musik" id="alat-musik">
+      <h1 class="text-green-800 text-xl font-medium uppercase sm:text-3xl">
+        Tarian Daerah
+      </h1>
+      <hr class="mt-2 border-2 bg-green-800 border-green-800 w-1/2" />
+      <div
+        class="
+          mt-6
+          grid grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          w-full
+          gap-5
+          pb-3
+        "
+      >
+        <!-- Jaipong -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Jaipong.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Jaipong
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Jaipong.jpg"
+                  alt=""
+                  class="
+                    lg:ml-3 lg:mr-10
+                    rounded-3xl
+                    lg:w-2/3
+                    p-5
+                    h-1/2
+                    lg:h-4/5
+                  "
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Jaipong
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Tari Jaipong diciptakan oleh seorang
+                    seniman asal Bandung, Gugum Gumbira sekitar tahun 1960-an,
+                    dengan tujuan untuk menciptakan suatu jenis musik dan tarian
+                    pergaulan yang digali dari kekayaan seni tradisi rakyat
+                    Nusantara, khususnya Jawa Barat. Meskipun termasuk seni tari
+                    kreasi yang relatif baru, jaipongan dikembangkan berdasarkan
+                    kesenian rakyat yang sudah berkembang sebelumnya, seperti
+                    Ketuk Tilu, Kliningan, serta Ronggeng.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Ada beberapa pengaruh yang
+                    melatarbelakangi terbentuknya tari pergaulan ini. Di kawasan
+                    perkotaan Priangan misalnya, pada masyarakat elite, tari
+                    pergaulan dipengaruhi dansa BallRoom dari Barat. Sementara
+                    pada kesenian rakyat, tari pergaulan dipengaruhi tradisi
+                    lokal. Pertunjukan tari - tari pergaulan tradisional tak
+                    lepas dari keberadaan ronggeng dan pamogoran.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bedhoyo Anglir Mendung -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Bedhoyo Anglir Mendung.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Bedhoyo Anglir Mendung
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Bedhoyo Anglir Mendung.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Bedhoyo Anglir Mendung
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Bedhoyo Anglir Mendung ini merupakan
+                    tarian yang dipersembahkan bagi Kanjeng Ratu Kidul sebagai
+                    pelindung raja – raja Mataram. Saat tarian ditampilkan,
+                    diyakini bahwa Kanjeng Ratu Kidul hadir dan ikut menari di
+                    antara penari-penari lain. Tari Bedhoyo harus ditarikan oleh
+                    9 orang penari, karena yang akan menggenapi adalah kehadiran
+                    Kanjeng Ratu Kidul. Tarian ini merupakan hasil inspirasi
+                    raja tentang suatu peristiwa yang disajikan dalam bentuk
+                    karya sastra.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Penari Bedhoyo berjumlah sembilan untuk
+                    Bedhoyo yang berasal dari Kasunanan Surakarta dan Kesultanan
+                    Yogyakarta, sedangkan untuk Bedhoyo Kadipaten Mangkunegaran
+                    berjumlah tujuh orang. Tarian ini termasuk dalam tarian
+                    klasik keraton yang ditarikan penari senior. Beberapa
+                    Bedhoyo mensyaratkan penarinya masih perawan dan tidak dalam
+                    masa haid serta sebagai prasyarat, penari harus puasa
+                    terlebih dahulu. Dulunya, tarian ini masih ditarikan oleh
+                    tiga orang penari wanita, yang diinterpretasikan sebagai
+                    Pangeran Sambernyowo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tari Saman -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Tari Saman.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tari Saman
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Tari Saman.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 p-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tari Saman
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Tari saman dikendalikan oleh seorang
+                    penangkat yang duduk di dalam formasi paling tengah, Syair
+                    tari saman selalu menggunakan Bahasa Gayo. Tari Saman dibagi
+                    dalam beberapa gerakan dalam posisi duduk, rengum, dering,
+                    salam, uluni lagu, lagu, anakni lagu, dan penutup. <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Tari saman tidak pernah diiringi oleh
+                    musik tradisional apapun. Kostum penari saman adalah pakaian
+                    tradisional suku Gayo yang disebut baju kantong dengan motif
+                    kerawang, dan di kepala dipakai bulang teleng yang disertai
+                    daun kepies. Tari Saman selalu membuka bulang teleng setelah
+                    gerakan mulai kencang dan memakainya kembali setelah
+                    selesai.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tari Piring -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Tari Piring.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tari Piring
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Tari Piring.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tari Piring
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Tari Piring ini merupakan tarian khas
+                    Minang yang memiliki pesona tersendiri sehingga membuatnya
+                    terkenal hingga ke Internasional. Pada awalnya, tari piring
+                    ini merupakan ritual ucapan rasa syukur masyarakat setempat
+                    kepada dewa - dewa setelah mendapatkan hasil panen yang
+                    melimpah ruah. Ritual dilakukan dengan membawa sesaji dalam
+                    bentuk makanan yang kemudian diletakkan di dalam piring
+                    sembari melangkah dengan gerakan yang dinamis. Setelah
+                    masuknya agama Islam ke Minangkabau, tradisi tari piring
+                    tidak lagi digunakan sebagai ritual ucapan rasa syukur. Akan
+                    tetapi, tari tersebut digunakan sebagai sarana hiburan bagi
+                    masyarakat banyak yang ditampilkan pada acara-acara
+                    keramaian.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tari Ronggeng Blantek -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Tari Ronggeng Blantek.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tari Ronggeng Blantek
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Tari Ronggeng Blantek.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tari Ronggeng Blantek
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Tari Ronggeng Blantek diciptakan oleh
+                    Wiwiek Widiyastuti, Wara Selly, dan Joko Sukosadono, atas
+                    permintaan Dinas Kebudayaan Provinsi DKI Jakarta di tahun
+                    1978. Tarian ini biasanya dipentaskan oleh 4 sampai 6 orang
+                    perempuan dengan mengenakan pakaian yang berwarna serba
+                    cerah. Gerakan tari ronggeng blantek awalnya perlahan tetapi
+                    kemudian berubah menjadi sangat cepat dan energik namun
+                    tetap luwes.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Tari Ronggeng Blantek kerap dipentaskan di
+                    berbagai acara kebudayaan Betawi, dan digunakan untuk
+                    menyambut tamu yang dianggap agung. Musik pengiring tari
+                    ronggeng blantek adalah gamelan topeng yang terdiri dari
+                    rebab, seperangkat gendang (gendang besar dan kulanter),
+                    ancak kenong tiga pencon, kecrek, kempul yang digantung pada
+                    sebuah gawangan, dan sebuah gong tahang atau gong angkong.
+                    Busana yang dikenakan berupa kebaya ronggeng blantek
+                    berwarna merah muda (pink), kain tumpal putih dengan motif
+                    burung hong, toka-toka silang ronggeng berwarna merah,
+                    ampok, serbet, dan selendang ronggeng bermotif burung hong.
+                    Perlengkapan lainnya berupa mahkota kembang topeng, kalung
+                    bunga teratai bersusun tiga, pending, dan anting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tari Topeng -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Tari Topeng.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tari Topeng
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Tari Topeng.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tari Topeng
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Tari Topeng merupakan salah satu kesenian
+                    asli daerah Cirebon, Jawa Barat. Sesuai namanya tarian ini
+                    dimainkan dengan mengenakan topeng atau kedok sebagai
+                    aksesoris utama. Tari topeng tidak hanya menyuguhkan
+                    keindahan dalam gerak, namun juga sarat akan simbol - simbol
+                    penuh makna.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Simbol - simbol ini direpresentasikan
+                    dalam bentuk topeng, jumlah topeng, hingga jumlah gamelan
+                    pengiringnya. Makna yang disampaikan dalam tari topeng
+                    meliputi nilai kepemimpinan, cinta, dan kebijaksanaan yang
+                    disampaikan melalui media tari.Selain Cirebon, daerah lain
+                    yang juga mengembangkan tari topeng adalah Subang,
+                    Indramayu, Majalengka, Jatibarang, hingga Brebes. Sampai
+                    saat ini, masih belum diketahui pasti pencipta dari tarian
+                    ini. Pasalnya, ada banyak versi cerita yang kerap dianggap
+                    sebagai asal usul tarian topeng. Salah satu versi cerita
+                    yang paling terkenal adalah tari topeng dibuat pertama kali
+                    pada zaman Majapahit. Pasca runtuhnya kerajaan besar
+                    tersebut, tari topeng dipertahankan oleh Kesultanan Demak.
+                    Lalu, menyebar ke wilayah Cirebon yang saat itu berada di
+                    bawah kekuasaan Kesultanan Demak.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reog Ponorogo -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Reog Ponorogo.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Reog Ponorogo
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Reog Ponorogo.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Reog Ponorogo
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp; Reog Ponorogo adalah kesenian tradisional
+                    yang berasal dari Jawa Timur bagian barat laut. Ponorogo
+                    dianggap sebagai kota asal Reog yang sebenarnya meski di
+                    Surabaya terdapat “Kampung Reog”. Gerbang kota Ponorogo
+                    dihiasi oleh sosok warok dan gemblak, dua sosok yang ikut
+                    tampil pada saat reog dipertunjukkan. Reog adalah salah satu
+                    budaya daerah di Indonesia yang masih sangat kental dengan
+                    hal - hal yang berbau mistik dan ilmu kebatinan yang kuat.
+                    <br />
+                    <br />
+                    &emsp;&emsp;&emsp;Konon reog ponorogo merupakan kisah
+                    tentang Raja Ponorogo yang berniat melamar puteri Kediri,
+                    Dewi Ragil Kuning. Di tengah perjalanan rombongan dicegat
+                    oleh Raja Singabarong dari Kediri. Pasukan Raja Singabarong
+                    terdiri dari merak dan singa, sedangkan dari Kerajaan
+                    Ponorogo hanya Raja Kelono dan Wakilnya Bujang Anom yang
+                    dikawal oleh “warok” (pria berpakaian hitam - hitam) pemilik
+                    ilmu hitam mematikan. Tarian yang diperagakan dalam
+                    pertunjukan reog ponorogo menggambarkan perang antara
+                    Kerajaan Kediri dan Kerajaan Ponorogo, adu kesaktian ilmu
+                    hitam di antara keduanya hingga bisa menyebabkan para penari
+                    kerasukan saat mementaskan tariannya.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tari Kecak -->
+        <div x-data="{'open' : false}" class="">
+          <div
+            @click="open = !open"
+            class="
+              duration-100
+              transform
+              hover:scale-105 hover:shadow-2xl hover:ring-4
+              rounded-2xl
+              cursor-pointer
+              flex flex-col
+              items-center
+              justify-evenly
+              p-5
+              h-full
+            "
+            style="background-color: #c4c4c44d"
+          >
+            <img
+              src="images/tarian/Tari Kecak.jpg"
+              alt=""
+              class="h-3/5 lg:h-3/5 rounded-xl"
+            />
+            <h1 class="mt-2 font-semibold text-green-800 text-center">
+              Tari Kecak
+            </h1>
+          </div>
+
+          <!-- detail -->
+          <div x-show="open">
+            <div
+              class="absolute inset-0 z-50 flex justify-center items-center"
+              style="background-color: rgba(128, 128, 128, 0.541)"
+            >
+              <div
+                class="
+                  hover:transform hover:scale-105 hover:ring-4 hover:shadow-2xl
+                  duration-300
+                  w-4/5
+                  h-4/5
+                  py-5
+                  lg:w-3/4 lg:h-3/4
+                  bg-white
+                  rounded-3xl
+                  flex flex-col
+                  lg:flex-row-reverse
+                  justify-center
+                  items-center
+                "
+                @click.outside="open = !open"
+              >
+                <img
+                  src="images/tarian/Tari Kecak.jpg"
+                  alt=""
+                  class="lg:ml-3 lg:mr-10 rounded-3xl rou lg:w-1/2 h-1/2 mt-5"
+                />
+                <div
+                  class="
+                    mt-5
+                    lg:flex lg:flex-col
+                    justify-center
+                    items-center
+                    overflow-y-hidden
+                  "
+                >
+                  <h1
+                    class="
+                      text-center
+                      font-medium
+                      text-green-800 text-2xl
+                      md:text-3xl
+                      mb-2
+                    "
+                  >
+                    Tari Kecak
+                  </h1>
+                  <p
+                    class="
+                      text-sm
+                      lg:text-base
+                      block
+                      px-7
+                      lg:px-10
+                      mt-4
+                      text-justify
+                      overflow-y-auto
+                      h-4/5
+                      lg:max-h-96
+                    "
+                  >
+                    &emsp;&emsp;&emsp;Kecak adalah jenis tari Bali yang paling
+                    unik. Kecak tidak diiringi dengan alat musik atau gamelan
+                    apapun tetapi diiringi dengan paduan suara sekitar puluhan
+                    orang pria. Kecak berasal dari jenis tari Sakral “Sang
+                    Hyang”. Pada tari Sanghyang seseorang yang sedang kemasukan
+                    roh berkomunikasi dengan para dewa atau leluhur yang sudah
+                    disucikan. Dengan menggunakan si penari sebagai media
+                    penghubung para Dewa atau Leluhur dapat menyampaikan
+                    sabdanya. Pada tahun 1930-an mulailah disisipkan cerita Epos
+                    Ramayana ke dalam tari tersebut.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

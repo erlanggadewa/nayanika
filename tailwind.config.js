@@ -1,12 +1,15 @@
 module.exports = {
   mode: "jit",
-  purge: ["./views/layouts/*.ejs", "./views/*.ejs", "./views/partials/*.ejs"],
+  purge: ["./views/*.ejs", "./views/*/*.ejs", "./views/*/*/*.ejs"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       inset: { "1/5": "20%" },
       left: { "4/5": "80%" },
       right: { "1/5": "20%" },
+      colors: {
+        "main-green": "#d7e2e8",
+      },
     },
   },
   variants: {
